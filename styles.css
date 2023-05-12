@@ -1,0 +1,123 @@
+.section {
+    position: relative;
+  }
+  
+  .profile-photo {
+    position: absolute;
+    top: 50%;
+    left: 40;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('profile.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffca28;
+  }
+  
+  .section {
+    padding: 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #28b5d8;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+  }
+  
+  .resume-link {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume-link:hover {
+    background-color: #ffca28;
+  }
+  
+  /* Animation */
+  @keyframes colorfulBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .section:hover {
+    animation: colorfulBackground 10s infinite;
+    background: linear-gradient(-45deg, #FF00A5, #FF8C00, #FFF700, #00FF00);
+    background-size: 400% 400%;
+  }
+  
+  /* Background Graphics */
+  .section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('new.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 100%;
+    z-index: -1;
+  }
+  
+  
